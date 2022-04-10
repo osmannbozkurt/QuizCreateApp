@@ -1,0 +1,23 @@
+﻿body {
+}
+
+.option {
+    padding: 5px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.option-selected {
+    background: #888;
+    color: white;
+}
+
+.wrong-answer {
+    background: red !important;
+}
+
+.correct-answer {
+    background: green !important;
+}

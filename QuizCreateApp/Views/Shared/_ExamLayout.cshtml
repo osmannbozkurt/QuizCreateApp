@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"] - QuizCreateApp</title>
+
+    @await Component.InvokeAsync("CommonImport")
+
+</head>
+<body>
+    <div class="loading hidden">
+        <div class='uil-ring-css' style='transform:scale(0.79);'>
+            <div></div>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+
+
+</body>
+</html>

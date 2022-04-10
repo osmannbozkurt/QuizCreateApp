@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_ExamLayout.cshtml";
+}
+
+
+<input type="hidden" id="selectAllExamId" value="@Url.Action("SelectAllExam", "Exam")" />
+<input type="hidden" id="completeExamurlId" value="@Url.Action("CompleteExam", "Exam")" />
+
+
+<div class="container">
+
+    <div class="row" id="prevnextexam">
+        <a class="col-2" onclick="goToPrevExam()">
+            <img src="@Url.Content("~/images/back-arrow.png")" width="30" height="30" />
+        </a>
+        <a class="col-2"  onclick="goToNextExam()">
+            <img src="@Url.Content("~/images/right-arrows.png")" width="30" height="30" />
+        </a>
+    </div>
+    <div id="examcontainer">
+    </div>
+
+
+
+    <div class="text-center mt-4">
+        <button class="btn-primary btn btn-lg" id="completequizbutton" onclick="completeExam()">
+            Complete the Quiz
+        </button>
+    </div>
+</div>
+
+
+<script src="@Url.Content("~/js/exam.js")"></script>
+
+
+<link rel="stylesheet" href="@Url.Content("~/css/exam.css")" asp-append-version="true" />
+ 

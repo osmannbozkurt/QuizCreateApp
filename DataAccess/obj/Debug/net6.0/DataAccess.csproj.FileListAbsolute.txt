@@ -1,0 +1,17 @@
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\obj\Debug\net6.0\DataAccess.csproj.AssemblyReference.cache
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\obj\Debug\net6.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\obj\Debug\net6.0\DataAccess.AssemblyInfo.cs
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\bin\Debug\net6.0\DataAccess.deps.json
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\bin\Debug\net6.0\DataAccess.dll
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\bin\Debug\net6.0\DataAccess.pdb
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\bin\Debug\net6.0\Core.dll
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\bin\Debug\net6.0\Entities.dll
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\bin\Debug\net6.0\Core.pdb
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\bin\Debug\net6.0\Entities.pdb
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\obj\Debug\net6.0\DataAccess.csproj.CopyComplete
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\obj\Debug\net6.0\DataAccess.dll
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\obj\Debug\net6.0\refint\DataAccess.dll
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\obj\Debug\net6.0\DataAccess.pdb
+C:\Users\osman\source\repos\QuizCreateApp\DataAccess\obj\Debug\net6.0\ref\DataAccess.dll

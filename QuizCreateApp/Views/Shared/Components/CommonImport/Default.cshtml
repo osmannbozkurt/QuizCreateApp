@@ -1,0 +1,25 @@
+﻿ 
+
+
+ <link rel="stylesheet" href="@Url.Content("~/lib/bootstrap/dist/css/bootstrap.min.css")" />
+    <link rel="stylesheet" href="@Url.Content("~/css/site.css")" asp-append-version="true" />
+    <link rel="stylesheet" href="@Url.Content("~/QuizCreateApp.styles.css")" asp-append-version="true" />
+        <script src="@Url.Content("~/lib/jquery/dist/jquery.min.js")"></script>
+    <script src="@Url.Content("~/lib/bootstrap/dist/js/bootstrap.bundle.min.js")"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+       <script>
+
+            function showLoading(){
+            var loadingOverlay = document.querySelector('.loading');
+            loadingOverlay.classList.remove('hidden');
+         }
+             function hideLoading(){
+            var loadingOverlay = document.querySelector('.loading');
+            loadingOverlay.classList.add('hidden');
+        }
+    </script>
+
+        <script src="@Url.Content("~/js/site.js")" asp-append-version="true"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

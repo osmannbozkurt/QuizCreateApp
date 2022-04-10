@@ -1,0 +1,53 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model List<Entities.Concrete.Quiz>
+
+
+
+    <input type="hidden" value="@Url.Action("DeleteQuiz","Home")" id="deleteQuizUrl" />
+@if (Model.Count > 0)
+{
+    <div class="text-right">
+    <a class="btn btn-success" href="@Url.Action("CreateQuiz", "Home")">Add Quiz</a>
+
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Title</th>
+                <th scope="col">CreatinDate</th>
+                <th scope="col">Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.Title</td>
+                <td>@item.Creatindate.ToShortDateString()</td>
+                <td>
+                    <a onclick="deleteQuiz(@item.Id)" class="text-danger">
+                        delete
+                    </a>
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+
+}
+else
+{
+    <div class="text-center">
+        <h1 class="display-4">Welcome to Quiz Creation App.</h1>
+        <p>There is no quiz yet <a href="@Url.Action("CreateQuiz")">Click and create quiz</a>.</p>
+    </div>
+}
+
+
+<script src="@Url.Content("~/js/quizList.js")"></script>

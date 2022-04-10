@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Register Quiz App";
+    Layout = "~/Views/Shared/_LoginLayout.cshtml";
+}
+@model Businness.Model.UserRegisterModel
+
+
+<div class="limiter">
+    <div class="container-login100">
+        <div class="wrap-login100">
+            <div class="login100-form-title" style="background-image: url(images/bg-01.jpg);">
+                <span class="login100-form-title-1">
+                    Register
+                </span>
+            </div>
+
+            <form class="login100-form validate-form" method="post">
+                <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+                    <span class="label-input100">FirstName</span>
+                    @Html.TextBoxFor(w=>w.FirstName,  new {@class="input100", @placeholder="Enter firstname", @required  = "required"})
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+                    <span class="label-input100">LastName</span>
+                    @Html.TextBoxFor(w=>w.LastName,  new {@class="input100", @placeholder="Enter lastname", @required  = "required"})
+                    <span class="focus-input100"></span>
+                </div>
+                <div class="wrap-input100 validate-input m-b-26" data-validate="Username is required">
+                    <span class="label-input100">UserName</span>
+                    @Html.TextBoxFor(w=>w.Email,  new {@class="input100", @placeholder="Enter username", @required  = "required"})
+                    <span class="focus-input100"></span>
+                </div>
+
+                <div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
+                    <span class="label-input100">Password</span>
+                    @Html.PasswordFor(w=>w.Password, new {@class="input100", @placeholder="Enter password", @required  = "required"})
+                    <span class="focus-input100"></span>
+                </div>
+                @if (Model != null)
+                {
+                    if (!string.IsNullOrEmpty(Model.ErrorMessage))
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            @Model.ErrorMessage
+                        </div>
+                    }
+                    if (Model.IsSuccess)
+                    {
+                        <div class="alert alert-success" role="alert">
+                            Registration completed successfully
+                        </div>
+                    }
+                }
+
+                
+                <div class="flex-sb-m w-full p-b-30">
+                   
+                        <a href="@Url.Action("Index")" class="txt1">
+                            Login Page
+                        </a> 
+                </div>
+                <div class="container-login100-form-btn">
+                    <button class="login100-form-btn">
+                        Register
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

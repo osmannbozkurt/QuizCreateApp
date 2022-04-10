@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "CreateQuiz";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<input type="hidden" id="quizPosturl" value="@Url.Action("InsertNewQuiz", "Home")" />
+<input type="hidden" id="blogselectApi" value="@Url.Action("getItems", "Home")" />
+<input type="hidden" id="homePageUrl" value="@Url.Action("QuizList", "Home")" />
+<div class="container">
+
+    <div class="input-group mb-3">
+        <label class="form-check-label" for="exampleCheck1">Blog Title</label>
+        <select class="custom-select w-100" id="blogTitleSelect" onchange="ontitlechange()">
+            <option disabled selected value="">Choose Blog...</option>
+
+        </select>
+    </div>
+    <div class="input-group mb-3">
+        <label class="form-check-label" for="exampleCheck1">Blog Content</label>
+        <div id="blog-content" class="blog-content">
+            <div class="text-center">
+                Please select a title for the Blog Post to appear.
+            </div>
+        </div>
+    </div>
+
+    <div id="question-area">
+
+        
+       
+    </div>
+
+
+    <div class="text-center mt-4">
+        <button class="btn-primary btn btn-lg" onclick="onPostQuestion()">
+            Save Quiz
+        </button>
+    </div>
+</div>
+
+
+<script src="@Url.Content("~/js/quizCreate.js")"></script>
+<link rel="stylesheet" href="@Url.Content("~/css/createQuiz.css")" asp-append-version="true" />
